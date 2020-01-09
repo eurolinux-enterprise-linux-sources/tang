@@ -1,0 +1,11 @@
+[Unit]
+Description=Tang Server socket
+Requires=tangd-update.path
+Requires=tangd-keygen.service
+
+[Socket]
+ListenStream=80
+Accept=true
+
+[Install]
+WantedBy=multi-user.target
